@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style/style.css">
+  <title>Frontend Mentor | Calculator app</title>
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="calculator">
+      <section class="header">
+        <h2>
+          calc
+        </h2>
+        <div class="theme__container">
+          <div class="theme__title">
+            theme
+          </div>
+          <div class="theme__states">
+            <div class="theme__numbers">
+              <span>1</span>
+              <span>2</span>
+              <span>3</span>
+            </div>
+            <div class="theme__checkbox" value="1">
+              <div class="checkbox state-1"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="screen">0</section>
+      <section class="calc__btns">
+        <div class="calc-row">
+          <button class="calc-btn">7</button>
+          <button class="calc-btn">8</button>
+          <button class="calc-btn">9</button>
+          <button class="calc-btn blue">del</button>
+        </div>
+        <div class="calc-row">
+          <button class="calc-btn">4</button>
+          <button class="calc-btn">5</button>
+          <button class="calc-btn">6</button>
+          <button class="calc-btn">+</button>
+        </div>
+        <div class="calc-row">
+          <button class="calc-btn">1</button>
+          <button class="calc-btn">2</button>
+          <button class="calc-btn">3</button>
+          <button class="calc-btn">-</button>
+        </div>
+        <div class="calc-row">
+          <button class="calc-btn">.</button>
+          <button class="calc-btn">0</button>
+          <button class="calc-btn">/</button>
+          <button class="calc-btn">&times;</button>
+        </div>
+        <div class="calc-row">
+          <button class="calc-btn double blue">reset</button>
+          <button class="calc-btn double red">=</button>
+        </div>
+      </section>
+    </div>
+  </div>
+  <script src="./src/script.js"></script>
+</body>
+</html>

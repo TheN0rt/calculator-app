@@ -1,0 +1,143 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+html, body{
+   min-height: 100vh;
+   font-family: 'League Spartan', sans-serif;
+   font-size: 32px;
+   background: hsl(222, 26%, 31%);
+}
+
+.wrapper{
+   height: 100vh;
+   margin: 0 auto;
+   width: min(90%, 1440px);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.calculator{
+   width: min(90%, 700px);
+   margin: 0 auto;
+}
+
+.header{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 30px;
+}
+
+.theme__container{
+   display: flex;
+   gap: 20px;
+   align-items: center;
+}
+
+.theme__numbers span{
+   font-size: 24px;
+}
+
+.theme__checkbox{
+   max-width: 100%;
+   height: 20px;
+   background: hsl(223, 31%, 20%);
+   border-radius: 16px;
+   padding: 6px;
+   position: relative;
+}
+
+.checkbox{
+   width: 14px;
+   height: 14px;
+   border-radius: 50%;
+   position: absolute;
+   top: 3px;
+   cursor: pointer;
+}
+
+.state-1{
+   left: 5px;
+   background: hsl(6, 63%, 50%);
+}
+
+.state-2{
+   left: 35%;
+   background: hsl(25, 98%, 40%);
+}
+
+.state-3{
+   right: 5px;
+   background: hsl(176, 100%, 44%);
+}
+
+.screen{
+   background: hsl(224, 36%, 15%);
+   height: 100px;
+   margin-bottom: 20px;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   padding: 20px;
+}
+
+.calc__btns{
+   padding: 20px;
+   background: hsl(223, 31%, 20%);
+}
+
+.calc__btns, .screen{
+   border-radius: 10px;
+}
+
+.calc-row{
+   display: flex;
+   justify-content: space-between;
+   margin: 3% 0;
+}
+
+.calc-btn{
+   color: hsl(221, 14%, 31%);
+   border-radius: 16px;
+   outline: none;
+   border: none;
+   background: hsl(30, 25%, 89%);
+   box-shadow: 0 5px hsl(28, 16%, 65%);
+   font-size: 32px;
+   height: 65px;
+   flex-basis: 23%;
+   cursor: pointer;
+   transition: all .3s ease;
+   text-transform: uppercase;
+}
+
+.calc-btn:active{
+   margin-top: 3px;
+   box-shadow: 0 2px;
+}
+
+.calc-btn:hover{
+   opacity: .7;
+}
+
+.double{
+   flex-basis: 48.5%;
+}
+
+.blue{
+   background: hsl(225, 21%, 49%);
+   box-shadow: 0 5px hsl(224, 28%, 35%);
+}
+
+.red{
+   background: hsl(6, 63%, 50%);
+   box-shadow: 0 5px hsl(6, 70%, 34%);
+}
+
+.calculator, .blue, .red{
+   color: hsl(0, 0%, 100%);
+}
